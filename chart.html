@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 <html>
+   <meta charset="UTF-8">
   <head>
     <title>chart demo</title>
     <script type="text/javascript" src="echarts.simple.min.js"></script>
-    <script type="text/javascript">
+  </head>
+  <body>
+     <!-- 为 ECharts 准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    
+      <script type="text/javascript">
      var option = {
     title : {
         text: '某站点用户访问来源',
@@ -47,9 +54,5 @@
          // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
     </script>
-  </head>
-  <body>
-     <!-- 为 ECharts 准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 600px;height:400px;"></div>
   </body>
 </html>
